@@ -9,8 +9,8 @@
 }
 
 body {
-    max-width: 675px;
     width: auto;
+    max-width: 675px;
     display: block;
     margin: 27px auto;
     padding: 0;
