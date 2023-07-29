@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond:400,700&display=swap');
 
 :root {
     --bgColor: #000000;
     --bgColor2: #303030;
     --accentColor: #ffffff;
-    --font: 'Karla', sans-serif;
+    --font: 'Cormorant Garamond', sans-serif;
     --delay: .3s;
 }
 
 body {
-    margin: 0;
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
     padding: 0;
-    min-height: 100vh;
     font-family: var(--font);
     background-color: var(--bgColor);
     /*background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);*/
-    opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; 
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
@@ -23,11 +24,26 @@ body {
     position: relative;
 }
 
-#links {
-    max-width: 675px;
-    width: auto;
+#header, #header img {
+    position: relative;
+    width: 96px;
+    height: 96px;
     display: block;
-    margin: 27px auto;
+    margin: 100px auto 20px;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#title {
+    color: var(--accentColor);
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    margin: 40px auto 20px;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
 }
 
 .link {
@@ -36,14 +52,15 @@ body {
     color: var(--accentColor);
     /*border: solid var(--accentColor) 2px;*/
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
     display: block;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 17px;
     padding: 17px; 
-    padding-right: 47px;
+    padding-right: 49px;
     text-decoration: none;
     /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
     -webkit-tap-highlight-color: transparent;
@@ -51,8 +68,9 @@ body {
 
 .thumbnail {
     float: left;
-    width: 30px; 
-    max-width: 30px;
+    width: 32px; 
+    max-width: 32px;
+    border-radius: 6px;
 }
 
 @media (hover: hover) {
