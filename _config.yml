@@ -43,6 +43,6 @@ sass:
 
 plugins:
   - jekyll-feed
-  - jekyll-soopr-seo-tag
+  - jekyll-seo-tag
 
 exclude: [moonwalk.gemspec, LICENSE.txt]
