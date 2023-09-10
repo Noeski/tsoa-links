@@ -4,7 +4,7 @@ author: Noeski
 tags: [Unity]
 ---
 
-![Screenshot](/images/posts/2023-09-05/execution-order.png)
+{% include image.html name="execution-order.png" alt="Screenshot" %}
 
 This Editor tool will display a list of all `MonoBehaviour`s in a project (packages included) and their respective execution order. This includes the [execution order](https://docs.unity3d.com/Manual/class-MonoManager.html) that can be set in the editor and the [undocumented](https://uninomicon.com/defaultexecutionorder) `DefaultExecutionOrder` attribute which can be set on a class. 
 

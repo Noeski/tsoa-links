@@ -32,6 +32,16 @@ p { margin: 1em 0; }
 
 li { margin: 0.4em 0; }
 
+.figure {
+	margin: 10px 10px;
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+  }
+}
+
 .w {
   max-width: 720px;
   margin: 0 auto;
