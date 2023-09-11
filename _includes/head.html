@@ -3,6 +3,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Twitter cards -->
+  <meta name="twitter:site" content="@{{ site.twitter.username }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+
+  {% if page.summary %}
+  <meta name="twitter:description" content="{{ page.summary }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+
+  {% if page.image %}
+  {% capture imagePath %}/images/posts/{{ page.date | date: "%Y-%m-%d" }}/{{ page.image }}{% endcapture %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ imagePath }}">
+  {% endif %}
+<!-- end of Twitter cards -->
+
   <title>
     {% if page.title %}
       {{ page.title }}
