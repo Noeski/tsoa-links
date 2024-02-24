@@ -76,7 +76,7 @@ In order to preview the parallax effect in the editor we need to create a button
 
 ```csharp
 [EditorToolbarElement(id, typeof(SceneView))]
-sealed class ParallaxToolbarButton : EditorToolbarToggle {
+public class ParallaxToolbarButton : EditorToolbarToggle {
     public const string id = "Scene View/Parallax Button";
 
     private bool _isActive;
@@ -180,7 +180,7 @@ sealed class ParallaxToolbarButton : EditorToolbarToggle {
     defaultDockZone = DockZone.TopToolbar,
     defaultLayout = Layout.HorizontalToolbar)]
 [Icon("Icons/Overlays/GridAndSnap.png")]
-class ParallaxToolbar : ToolbarOverlay {
+public class ParallaxToolbar : ToolbarOverlay {
     private const string _id = "Scene View/Parallax";
     private const string _displayName = "Parallax";
 
